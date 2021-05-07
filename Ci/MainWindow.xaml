@@ -6,8 +6,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:Ci"
     mc:Ignorable="d"
-    Title="LoginForm" Height="650" Width="800" 
-    Background="Transparent">
+    Title="LoginForm" Height="850" Width="800" 
+    Background="Transparent" >
     <Border x:Name="borderLogin" 
             BorderThickness="2"  
             CornerRadius="50" >
@@ -37,7 +37,7 @@
 
             <StackPanel Orientation="Vertical" Grid.Row="1">
 
-                <StackPanel Orientation="Horizontal" Margin="0,40,10,10">
+                <StackPanel Orientation="Horizontal" Margin="0,40,10.4,10">
                     <TextBlock  Text="Smart" FontSize="25"
                             FontFamily="Helvetica" Foreground="#23aa8f"
                             FontWeight="Bold" HorizontalAlignment="Left" Margin="330,0,0,20"/>
@@ -89,7 +89,7 @@
                             <GradientStop Color="#009c8f" Offset="0.7"></GradientStop>
                         </LinearGradientBrush>
                     </Border.Background>
-                    <Button Name="Login"   Content="Login" FontFamily="Helvetica"
+                    <Button Name="Login" Click="Login_Click"  Content="Login" FontFamily="Helvetica"
                         Foreground="#fff" FontSize="15" FontWeight="Bold"
                         Width="190" Height="30" Background="Transparent" 
                         HorizontalAlignment="Center" IsEnabled="True">

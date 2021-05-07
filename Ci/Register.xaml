@@ -110,8 +110,8 @@
                     </Button>
                 </Border>
 
-                <Button Content="Login" FontSize="10" 
-                           FontWeight="Light" Grid.Row="4" Margin="0,100,200,0" 
+                <Button Content="Signup" FontSize="10" 
+                           FontWeight="Light" Click="Button_Click" Grid.Row="4" Margin="0,100,200,0" 
                            Foreground="#23aa8f" FontFamily="Helvetica"
                            HorizontalAlignment="Center"></Button>
             </StackPanel>
