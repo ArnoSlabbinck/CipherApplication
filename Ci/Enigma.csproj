@@ -58,29 +58,20 @@
     <Compile Include="Cipher.xaml.cs">
       <DependentUpon>Cipher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Register.xaml.cs">
-      <DependentUpon>Register.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Respository\IRotor.cs" />
+    <Compile Include="Respository\Keyboard.cs" />
+    <Compile Include="Respository\Lampboard.cs" />
+    <Compile Include="Respository\Plugboard.cs" />
+    <Compile Include="Respository\Reflector.cs" />
+    <Compile Include="Respository\Rotor.cs" />
     <Page Include="Cipher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="Register.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

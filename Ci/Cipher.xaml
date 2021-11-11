@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ci"
         mc:Ignorable="d"
-        Title="Cipher" Height="1200" Width="2000" Background="DarkSlateGray">
+        Title="Cipher" Height="1000" Width="1500" Background="DarkSlateGray">
 
 
     <Window.Resources>
@@ -42,6 +42,7 @@
         <KeyBinding Key="X" x:Name="X"  CommandParameter="X" Command="{StaticResource Keypressed}"/>
         <KeyBinding Key="Y" x:Name="Y"  CommandParameter="Y" Command="{StaticResource Keypressed}"/>
         <KeyBinding Key="Z" x:Name="Z"  CommandParameter="Z" Command="{StaticResource Keypressed}"/>
+        <KeyBinding Key="Space" x:Name="Space"  CommandParameter=" " Command="{StaticResource Keypressed}"/>
     </Window.InputBindings>
     
     <Grid>
@@ -53,418 +54,8 @@
                 <GradientStop Color=" #000000" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
-        <StackPanel Orientation="Horizontal" Margin="400,0,0,650">
-            <CheckBox x:Name="LockRotors" IsChecked="True" HorizontalAlignment="Center"  Checked="LockRotors_Checked" Margin="0,10,0,0" ></CheckBox>
-            <Label Content="Lock Rotors" FontWeight="DemiBold" Foreground="AliceBlue" Margin="0,2,0,0"></Label>
-            <Label Content="Reflector" FontWeight="DemiBold" Foreground="GhostWhite" Margin="100,20,0,0"/>
-            <Label Content="Rotor3" FontWeight="DemiBold" Foreground="GhostWhite" Margin="200,20,0,0"/>
-            <Label Content="Rotor2" FontWeight="DemiBold" Foreground="GhostWhite" Margin="200,20,0,0"/>
-            <Label Content="Rotor1" FontWeight="DemiBold" Foreground="GhostWhite" Margin="200,20,0,0"/>
-            <Label Content="Reflector" FontWeight="DemiBold" Foreground="GhostWhite" Margin="200,28,0,0"/>
-        </StackPanel>
-
-        <Border Width="1200" Height="900" BorderThickness="2" BorderBrush="GhostWhite" Margin="180,0,0,180">
-            <Grid>
-                <StackPanel Orientation="Vertical" Margin="0,0,0,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-450,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-550,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-950,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-1050,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,4,-1450.2,-4.2">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-1550,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-1950,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-2020,0">
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-                    <Border Width="15" Height="15" Background="DarkGreen" BorderThickness="1" CornerRadius="100" BorderBrush="Black" Margin="0,15,950,0"></Border>
-
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,0,-2100,0">
-                    <Label Content="A" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="B" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="C" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="D" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="E" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="F" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="G" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="H" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="I" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="J" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="K" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="L" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="N" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="M" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="O" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="P" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="Q" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="R" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="S" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="T" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="U" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="V" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="W" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="X" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="Y" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-                    <Label Content="Z" FontWeight="DemiBold" Foreground="GhostWhite" Margin="1150,8,950,0"/>
-
-                </StackPanel>
-            </Grid>
-        </Border>
-        <Border Width="350" Height="125"  BorderBrush="GhostWhite" Margin="0,0,1500,900" BorderThickness="1">
-            <Grid>
-                <StackPanel Margin="0,10,0,80">
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,3,300,0">
-                        <TextBlock x:Name="ALamp" Text="A"  FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,225,0">
-                        <TextBlock x:Name="ZLamp" Text="Z" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,150,0">
-                        <TextBlock x:Name="ELamp" Text="E" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,75,0">
-                        <TextBlock x:Name="RLamp" Text="R" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,0,0">
-                        <TextBlock x:Name="TLamp" Text="T" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-75,0">
-                        <TextBlock x:Name="YLamp" Text="Y" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-150,0">
-                        <TextBlock x:Name="ULamp" Text="U" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-225,0">
-                        <TextBlock x:Name="ILamp" Text="I" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-300,0">
-                        <TextBlock x:Name="OLamp"  Text="O" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                </StackPanel>
-                <StackPanel Margin="0,50,0,40">
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,3,300,0">
-                        <TextBlock x:Name="PLamp" Text="P" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,225,0">
-                        <TextBlock x:Name="QLamp" Text="Q" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,150,0">
-                        <TextBlock x:Name="SLamp" Text="S" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,75,0">
-                        <TextBlock x:Name="DLamp" Text="D" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,0,0">
-                        <TextBlock x:Name="FLamp" Text="F" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-75,0">
-                        <TextBlock x:Name="GLamp" Text="G" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-150,0">
-                        <TextBlock x:Name="HLamp" Text="H" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-225,0">
-                        <TextBlock x:Name="JLamp" Text="J" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-300,0">
-                        <TextBlock x:Name="KLamp" Text="K" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                </StackPanel>
-                <StackPanel Margin="20,90,0,0">
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,3,300,0">
-                        <TextBlock x:Name="LLamp" Text="L" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,225,0">
-                        <TextBlock  x:Name="MLamp" Text="M" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,150,0">
-                        <TextBlock x:Name="WLamp" Text="W" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,75,0">
-                        <TextBlock x:Name="XLamp" Text="X" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,0,0">
-                        <TextBlock x:Name="CLamp" Text="C" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-75,0">
-                        <TextBlock x:Name="VLamp" Text="V" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-150,0">
-                        <TextBlock x:Name="BLamp" Text="B" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-                    <Border CornerRadius="100" BorderThickness="2" Width="30" Height="30" BorderBrush="AliceBlue" Margin="0,-31,-225,0">
-                        <TextBlock x:Name="NLamp" Text="N" FontSize="20" HorizontalAlignment="Center" Foreground="AliceBlue" FontWeight="Bold" ></TextBlock>
-                    </Border>
-
-                </StackPanel>
-
-            </Grid>
-
-
-        </Border>
+       
+     
         <TextBlock Text="Lamps" Foreground="AliceBlue" FontSize="30" FontWeight="Light" Margin="0,175,0,0">
             <TextBlock.RenderTransform>
                 <RotateTransform Angle="270"/>
@@ -472,7 +63,7 @@
         </TextBlock>
             
             
-        <Border Width="350" Height="125"  BorderBrush="GhostWhite" Margin="2,0,1500,600" BorderThickness="1">
+        <Border Width="350" Height="125"  BorderBrush="GhostWhite" Margin="200,0,800,600" BorderThickness="1">
             <Grid>
                 <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
                     <Label Content="A" FontWeight="Medium" FontSize="15" Foreground="AliceBlue" Margin="5,0,0,0"></Label>
@@ -490,34 +81,34 @@
                     <Label Content="M" FontWeight="Medium" FontSize="15" Foreground="AliceBlue" Margin="5,0,0,0"></Label>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="13,0,10,20">
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="4,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="ALamp"  Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100"/>
+                    <Border x:Name="BLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="CLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="DLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="ELamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="FLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
+                    <Border x:Name="GLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="HLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
+                    <Border x:Name="ILamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="4,0,0,0"/>
+                    <Border x:Name="JLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="KLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
+                    <Border x:Name="LLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="MLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="13,60,10,0">
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="4,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
-                    <Border Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="NLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100"/>
+                    <Border x:Name="OLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="PLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="QLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="RLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="SLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
+                    <Border x:Name="TLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="ULamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
+                    <Border x:Name="VLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="4,0,0,0"/>
+                    <Border x:Name="WLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="XLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="2,0,0,0"/>
+                    <Border x:Name="YLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
+                    <Border x:Name="ZLamp" Width="20" Height="20" Background="Black" BorderThickness="2" BorderBrush="AliceBlue" CornerRadius="100" Margin="5,0,0,0"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="10,97,0,0">
                     <Label Content="N" FontWeight="Medium" FontSize="15" Foreground="AliceBlue" Margin="5,0,0,0"></Label>
@@ -541,7 +132,7 @@
 
 
 
-        <StackPanel HorizontalAlignment="Stretch" Margin="0,400,900,270">
+        <StackPanel HorizontalAlignment="Stretch" Margin="200,320,200,270">
             <Border Width="40" Height="40" Margin="0,0,860,0" BorderBrush="GhostWhite" BorderThickness="1">
                 <Button x:Name="IButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="I" Margin="1.2,0.2,-0.8,0.2"></Button>
             </Border>
@@ -563,7 +154,7 @@
 
 
         </StackPanel>
-        <StackPanel HorizontalAlignment="Stretch" Margin="50,450,950,200">
+        <StackPanel HorizontalAlignment="Stretch" Margin="0,585,0,200">
             <Border Width="40" Height="40" Margin="0,0,860,0" BorderBrush="GhostWhite" BorderThickness="1">
                 <Button x:Name="FButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="F"></Button>
             </Border>
@@ -585,7 +176,7 @@
 
 
         </StackPanel>
-        <StackPanel HorizontalAlignment="Stretch" Margin="0,500,950,150">
+        <StackPanel HorizontalAlignment="Stretch" Margin="0,510,50,150">
             <Border Width="40" Height="40" Margin="0,0,860,0" BorderBrush="GhostWhite" BorderThickness="1">
                 <Button x:Name="MButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="M"></Button>
             </Border>
@@ -609,55 +200,49 @@
             </Border>
 
         </StackPanel>
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Margin="250,100,10,150">
+            <Border Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="Abutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="A"></Button>
+            </Border>
+            <Border Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="ZButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="Z"></Button>
+            </Border>
+            <Border Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="EButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="E"></Button>
+            </Border>
+            <Border Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="Rbutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="R"></Button>
+            </Border>
+            <Border Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="Tbutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="T"></Button>
+            </Border>
+            <Border  Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="Ybutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="Y"></Button>
+
+            </Border>
+            <Border Width="40" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="Ubutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="U"></Button>
+
+            </Border>
+
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Margin="350,625,10,150">
+            <Border Width="140" Height="40" Margin="0,0,20,0" BorderBrush="GhostWhite" BorderThickness="1">
+                <Button x:Name="Spacebutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="Space"></Button>
+            </Border>
             
         </StackPanel>
-        <Border Width="40" Height="40" Margin="0,0,1800,0" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="Abutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="A"></Button>
-        </Border>
-        <Border Width="40" Height="40" Margin="0,0,1700,0" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="ZButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="Z"></Button>
-        </Border>
-        <Border Width="40" Height="40" Margin="146,340,1750,341" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="EButton" Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="E"></Button>
-        </Border>
-        <Border Width="40" Height="40" Margin="0,0,1500,0" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="Rbutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="R"></Button>
-        </Border>
-        <Border Width="40" Height="40" Margin="0,0,1400,0" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="Tbutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="T"></Button>
-        </Border>
-        <Border  Width="40" Height="40" Margin="0,0,1300,0" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="Ybutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="Y"></Button>
-
-        </Border>
-        <Border Width="40" Height="40" Margin="0,0,1200,0" BorderBrush="GhostWhite" BorderThickness="1">
-            <Button x:Name="Ubutton"  Background="Transparent"  FontSize="30" FontWeight="Bold" Foreground="AliceBlue" Content="U"></Button>
-               
-        </Border>
+            
         
-
+    
         <TextBlock Text="Keyboard" Foreground="AliceBlue" FontSize="30" FontWeight="Bold" Margin="1,600,0,0">
             <TextBlock.RenderTransform>
                 <RotateTransform Angle="270"/>
             </TextBlock.RenderTransform>
         </TextBlock>
 
-        <StackPanel Orientation="Horizontal" Margin="-2,0,1.6,-0.2">
-            <Label Content="Rotor type" FontWeight="Medium" Foreground="AliceBlue" Margin="50,600,0,0"></Label>
-            <ComboBox Margin="30,510,0,0"  Height="20" Width="80" Background="Yellow" Style="{DynamicResource ComboBoxStyle1}">
-                <ComboBox.ItemContainerStyle>
-                    <Style TargetType="ComboBoxItem">
-                        <Setter Property="Background" Value="Yellow"/>
-                        <Setter Property="BorderBrush" Value="Yellow"/>
-                    </Style>
-                </ComboBox.ItemContainerStyle>
-                <ComboBoxItem Content="One"/>
-                <ComboBoxItem Content="Two"/>
-                <ComboBoxItem Content="Three"/>
-            </ComboBox>
-        </StackPanel>
-        <RichTextBox x:Name="Message" Background="GhostWhite" BorderThickness="2" Width="1200" Height="200" Margin="497,950,300,0">
+        <RichTextBox x:Name="Message" Background="GhostWhite" BorderThickness="2" Width="500" Height="200" Margin="725,50,300,0">
             
         </RichTextBox>
         
